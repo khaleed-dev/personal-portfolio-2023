@@ -1,0 +1,41 @@
+#services {
+    padding: 0px 15px;
+    height: 100vh;
+    h2 {
+        font-weight: 600;
+        font-size: 2rem;
+        margin: 0;
+    }
+    p {
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    .grid-index {
+        margin-bottom: 120px;
+    }
+}
+.fancy-list {
+    padding-inline-start: 30px;
+    li {
+        position: relative;
+        font-family: 'SF Mono', sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        padding: 5px;
+        margin-bottom: 3rem;
+    }
+    li::after {
+        content: "";
+        position: absolute;
+        background: white;
+        bottom: -6px;
+        left: 0;
+        height: 2px;
+        width: 100%; 
+    }
+    .inner-index {
+        font-family: 'teko', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+}

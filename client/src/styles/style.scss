@@ -1,0 +1,126 @@
+// imports
+
+// primary font - poppins
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+// secondary font -- sf-mono
+@import url('https://fonts.cdnfonts.com/css/sf-mono?styles=36554,36550,36552,36556,36546,36548');;
+
+// index font - teko
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap');
+
+// scss utility imports
+@import "./util/utils";
+@import "./util/colors";
+@import "./util/mixins";
+
+// CSS Simple reset
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    background-color: $light;
+    padding: 0px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+p {
+    font-weight: 400;
+}
+
+// website styling
+
+//? buttons
+@import "./components/buttons"; 
+
+//? header (navbar)
+@import "./components/header"; 
+
+//? main landing section
+@import "./components/landing"; 
+
+//? about section
+@import "./components/about";
+
+//? project section
+@import "./components//projects";
+
+//? services section
+@import "./components/services"; 
+
+//? footer
+@import "./components/footer";
+
+//? global styling
+main {
+    padding: 0px 15px;
+    height: 90vh;
+    .grid-index {
+        margin-bottom: 157px;
+    }
+}
+.grid-165{
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto 6fr 5fr;
+}
+.grid-147{
+    display: grid;
+    grid-template-columns: auto 5fr 6fr;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.grid-index {
+    font-family: 'teko', sans-serif;
+    font-size: 1.5rem;
+    position: relative;
+    // margin-bottom: 157px;
+    padding-right: 10px;
+    display: inline-block;
+}
+.grid-index::after {
+    content: "";
+    position: absolute;
+    background: black;
+    bottom: -6px;
+    left: 0;
+    height: 3px;
+    width: 90%; 
+}
+.grid-text{
+    @include d-flex(column);
+    position: relative;
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+}
+.underlined {
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+}
+.underlined::before {
+    content: "";
+    position: absolute;
+    background: #00FFC2;
+    bottom: 15px;
+    z-index: -1;
+    left: 0;
+    height: 10px;
+    width: 100%; 
+}
+
+
+//? // media queries
+@import "./mq";

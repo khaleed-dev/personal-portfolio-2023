@@ -1,0 +1,26 @@
+{
+  "name": "personal-portfolio-2023",
+  "version": "1.0.0",
+  "description": "Khaled Saied's 2023 personal portfolio",
+  "scripts": {
+    "start:client": "parcel serve client/src/index.html --public-url / --dist-dir client/dist",
+    "build:client": "parcel build client/src/index.html --public-url / --dist-dir client/dist",
+    "start:server": "node server/index.js",
+    "dev:server": "nodemon server/index.js"
+  },
+  "author": "Khaled Saied",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "parcel": "^2.8.2",
+    "process": "^0.11.10",
+    "nodemon": "^2.0.20"
+  },
+  "keywords": [],
+  "dependencies": {
+    "email-validator": "^2.0.4",
+    "firebase": "^9.15.0",
+    "TagCloud": "^2.3.2",
+    "express": "^4.18.2"
+  }
+}

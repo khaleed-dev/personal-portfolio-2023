@@ -1,0 +1,18 @@
+header {
+    .wide-nav {
+        @include d-flex(row, space-between, center);
+        @include indexStyle($primaryColor);
+        padding: 0px 15px;
+        height: 10vh;
+        .nav-links{
+            @include d-flex(row, initial, center);
+            li a{
+                padding: 10px 15px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .mobile-nav {
+        display: none;
+    }
+}

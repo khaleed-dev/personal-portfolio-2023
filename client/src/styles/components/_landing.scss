@@ -1,0 +1,33 @@
+.social-links{
+    grid-column: 1 / span 3;
+    width: 100%;
+    height: 100%;
+    font-family: 'SF Mono', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    @include d-flex(row, center, center);
+    div{
+        margin-right: 15px;
+        &:nth-child(odd) {
+            position: relative;
+        }
+        &:nth-child(odd)::after{
+            content: "";
+            position: absolute;
+            background: black;
+            bottom: -7px;
+            left: 0;
+            height: 2px;
+            width: 100%; 
+        }
+    }
+}
+//? animation
+.tagcloud {
+    font-size: 20px;
+    margin: auto;
+    width: 50%;
+}
+.tagcloud--item:hover {
+color: #36454F;
+}

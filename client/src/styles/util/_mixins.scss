@@ -1,0 +1,15 @@
+@mixin d-flex($dir: initial, $jc: initial, $ai: initial){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin indexStyle($color){
+    .nav-index{
+        font-family: 'Teko', sans-serif;
+        font-size: larger;
+        margin-right: 5px;
+        color: $color;
+    }
+}
