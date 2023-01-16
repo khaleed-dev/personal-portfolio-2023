@@ -2,6 +2,7 @@
   "name": "personal-portfolio-2023",
   "version": "1.0.0",
   "description": "Khaled Saied's 2023 personal portfolio",
+  "main": "server/index.js",
   "scripts": {
     "start:client": "parcel serve client/src/index.html --public-url / --dist-dir client/dist",
     "build:client": "parcel build client/src/index.html --public-url / --dist-dir client/dist",
