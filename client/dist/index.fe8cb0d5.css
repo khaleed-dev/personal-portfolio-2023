@@ -140,6 +140,24 @@ p {
   background-color: #f2f2f2;
 }
 
+.back-to-top {
+  z-index: 99;
+  color: #17a2b8;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 36px;
+  transition: all .2s ease-in-out;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+}
+
+.back-to-top:hover {
+  color: #06d69e;
+}
+
 header .wide-nav {
   height: 10vh;
   flex-direction: row;

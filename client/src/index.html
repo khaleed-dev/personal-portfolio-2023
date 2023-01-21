@@ -6,41 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.scss">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <script src="./js/script.js" type="module"></script>
     <script src="./js/tagCloud.js" type="module"></script>
+    <script src="./js/form.js" type="module"></script>
+    <script src="./js/script.js" type="module"></script>
     <title>Khaled Elshahawy</title>
 </head>
 <body>
+    <!-- ? bg grid -->
     <div id="site-grid">
         <span class="vl"></span><span class="vl"></span><span class="vl"></span><span class="vl"></span><span class="vl"></span><span class="vl-r"></span>
     </div>
+
+    <!-- ? back to top button -->
+    <button class="back-to-top" title="Back to top">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </button>
+
+    <!-- ? navigation -->
     <header class="container">
         <div class="wide-nav">
-            <span>Khaled Logo</span>
+            <a href="/">Khaled Logo</a>
             <ul class="nav-links">
-                <li><a href="#"><span class="nav-index">01/</span>About</a></li>
-                <li><a href="#"><span class="nav-index">02/</span>Projects</a></li>
-                <li><a href="#"><span class="nav-index">03/</span>Services</a></li>
-                <li><a href="#"><span class="nav-index">04/</span>Contact</a></li>
+                <li><a href="#about"><span class="nav-index">01/</span>About</a></li>
+                <li><a href="#featured-projects"><span class="nav-index">02/</span>Projects</a></li>
+                <li><a href="#services"><span class="nav-index">03/</span>Services</a></li>
+                <li><a href="#contact"><span class="nav-index">04/</span>Contact</a></li>
             </ul>
             <a href="/resume" class="btn-1" target="_blank">Resume</a>
         </div>
 
         <div class="mobile-nav">
-            <span>Khaled Logo</span>
+            <a href="/">Khaled Logo</a>
             <i class="bi bi-list"></i>
             <ul class="mobile-nav-links hide">
                 <div class="bi bi-x"></div>
-                <li><a href="#"><span class="nav-index">01/</span>About</a></li>
-                <li><a href="#"><span class="nav-index">02/</span>Projects</a></li>
-                <li><a href="#"><span class="nav-index">03/</span>Services</a></li>
-                <li><a href="#"><span class="nav-index">04/</span>Contact</a></li>
+                <li><a href="#about"><span class="nav-index">01/</span>About</a></li>
+                <li><a href="#featured-projects"><span class="nav-index">02/</span>Projects</a></li>
+                <li><a href="#services"><span class="nav-index">03/</span>Services</a></li>
+                <li><a href="#contact"><span class="nav-index">04/</span>Contact</a></li>
             </ul>
         </div>
     </header>
 
     <!-- ? landing -->
-    <main class="container">
+    <main class="container" id="main">
         <div class="grid-165">
             <div class="grid-index wide-index">Hello There 👋</div>
             <div class="grid-text main-content">
@@ -225,7 +234,7 @@
     </section>
 
     <!-- ? footer / contact -->
-    <footer id="footer">
+    <footer id="contact">
         <div class="container grid-165">
             <div class="grid-title">
                 <h3 class="underlined">
@@ -273,8 +282,6 @@
             </div>
         </div>
     </footer>
-    
-    <!-- tagcloud cdn -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script> -->
+
 </body>
 </html>
