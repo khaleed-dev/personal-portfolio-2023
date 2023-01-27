@@ -1,4 +1,17 @@
-@media only screen and (min-width: 931px) and (max-width: 1260px){
+@media only screen and (min-width: 877px) and (max-width: 1260px){
+    main {
+        height: 100%;
+        padding: 0px 15px 50px;
+        
+    }
+    footer {
+        height: 100%;
+        padding: 0px 15px 50px;
+    }
+    header .wide-nav{
+        height: 100%;
+        padding: 15px;
+    }
     .grid-165, .grid-147 {
         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)) !important; 
     }
@@ -12,7 +25,9 @@
     .grid-index::after {
         background: none !important;
     }   
-    .wide-index { display: none;}
+    .wide-index { 
+        display: none;
+    }
     .mob-index { 
         display: block !important;
         position: absolute;
@@ -43,7 +58,7 @@
         min-height: auto;
     }
 }
-@media only screen and (max-width: 930px){
+@media only screen and (max-width: 876px){
     body {
         position: relative;
     }
@@ -64,6 +79,8 @@
     }
     // header
     header {
+        overflow: auto;
+        z-index: 999;
         .wide-nav {
             display: none;
         }
@@ -81,7 +98,8 @@
         .mobile-nav-links {
             z-index: 99;
             position: fixed;
-            background-color: rgba(255, 255, 255, .95);
+            background-color: hsla(0, 0%, 100%, 0.8);
+            backdrop-filter: blur(10px);
             margin: 0;
             top: 0;
             right: 0;
@@ -105,6 +123,7 @@
             cursor: pointer;
         }
     }
+
     // landing
     main {
         height: 100%;
@@ -148,12 +167,7 @@
         }
         img {
             width: 70%;
-        }
-        .border { 
-            top: 40px;
-            left: 77px;
-            right: 30px;
-            bottom: -5px;
+            position: relative;
         }
         .wrapper {
             display: flex;
@@ -161,11 +175,17 @@
             align-items: center;
             padding: 15px 0;
         }
+        .border { 
+            top: 30px;
+            left: 70px;
+            right: 25px;
+            bottom: 0px;
+        }
         .wrapper:hover .border{
-            top: 40px;
-            left: 77px;
-            right: 30px;
-            bottom: -5px;
+            top: 25px;
+            left: 60px;
+            right: 35px;
+            bottom: 10px;
         }
         .mob-index{
             top: -10px;
@@ -246,9 +266,10 @@
         }
         h2 {
             margin-top: 0;
+            font-size: 1.6rem !important;
         }
         h3 {
-            font-size: 26px !important;
+            font-size: 1.6rem !important;
         }
         form {
             align-items: center;
@@ -259,21 +280,84 @@
         }
     }
 }
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 400px){
     main {
         h1 {
-            font-size: 28px !important;
+            font-size: 25px !important;
+        }
+        .social-links {
+            font-size: 15px;
+            div { margin-right: 5px; }
+        }
+        .main-content {
+            margin: 3rem 0 !important;
         }
     }
-    #services {
-        .grid-text {
+    #about {
+        padding: 35px 10px;
+        .about-me {
+            font-size: 15px;
+        }
+        .grid-165 {
+            padding: 0px;
+        }
+        .border {
             display: none;
+        }
+    }
+    #featured-projects {
+        .underlined {
+            font-size: 1.6rem;
+        }
+        .project-item b {
+            font-size: 1.5rem;
+        }
+        .project-item {
+            img {
+                padding: 15px;
+                border-radius: 10px;
+            }
+        }
+        .project-footer {
+            display: block;
+            .project-links {
+                justify-content: unset;
+            }
         }
     }
     #noteworthy {
         padding: 0;
+        .github-projects-grid {
+            margin: 10px 10px;
+        }
         .underlined {
-            font-size: 26px;
+            font-size: 1.5rem;
+        }
+    }
+    #services {
+        .grid-147 {
+            padding: 0px;
+        }
+        .grid-text {
+            h2, p, .grid-cta {
+                display: none;
+            }
+        }
+    }
+
+    footer {
+        h2 {
+            font-size: 1.3rem !important;
+        }
+        p {
+            font-size: 1rem !important;
+        }
+        .form-inner {
+            width: 100%;
+        }
+        .credits {
+            font-size: 0.8rem;
+            text-align: center;
         }
     }
 }

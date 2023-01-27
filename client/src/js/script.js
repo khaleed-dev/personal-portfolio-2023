@@ -13,6 +13,20 @@ document.addEventListener('click', (e) => {
         navlinks.classList.add('hide')
     }
 })
+// todo sticky navbar on scrolling up
+let lastScroll = 0;
+const header = document.querySelector('header')
+const widenav = document.querySelector('.wide-nav')
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 20 && window.scrollY < lastScroll) {
+        header.classList.add('stick');
+        widenav.classList.add('blur');
+    } else {
+        header.classList.remove('stick');
+        widenav.classList.remove('blur');
+    }
+    lastScroll = window.scrollY;    
+});
 
 // todo back to top button
 
@@ -58,5 +72,5 @@ readMoreBtn.addEventListener('click',  e => {
     // - make the pressing area bigger on featured project
     // - organize your github, make noteworthy projects added dynamically with the github api.
     // - make sure all the links working correct.
-    - readmore functionality
+    // - readmore functionality
 */

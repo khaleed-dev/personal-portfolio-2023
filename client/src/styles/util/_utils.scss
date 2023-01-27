@@ -70,3 +70,12 @@
 .show {
     display: flex !important;
 }
+.stick {
+    position: sticky;
+    top: 0;
+    background-color: hsl(0, 0%, 100%, 0.95);
+    z-index: 999;
+}
+.blur {
+    backdrop-filter: blur(5px);
+}
