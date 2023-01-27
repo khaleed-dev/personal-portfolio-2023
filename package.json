@@ -8,6 +8,7 @@
     "start:server": "node server/index.js",
     "dev:server": "nodemon server/index.js"
   },
+  "main": "server/index.js",
   "author": "Khaled Saied",
   "license": "ISC",
   "devDependencies": {
