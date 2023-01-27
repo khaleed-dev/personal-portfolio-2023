@@ -3,6 +3,7 @@
     display: flex;
     .grid-165 {
         grid-template-columns: auto 6fr 5fr;
+        padding: 0px 15px;
     }
     .grid-index {
         align-self: flex-start;

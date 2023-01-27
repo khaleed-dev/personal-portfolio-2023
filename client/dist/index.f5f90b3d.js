@@ -1868,8 +1868,8 @@ parcelHelpers.export(exports, "validateCallback", ()=>validateCallback);
 parcelHelpers.export(exports, "validateContextObject", ()=>validateContextObject);
 parcelHelpers.export(exports, "validateIndexedDBOpenable", ()=>validateIndexedDBOpenable);
 parcelHelpers.export(exports, "validateNamespace", ()=>validateNamespace);
-var process = require("65f8fbf5c308e03d");
 var global = arguments[3];
+var process = require("97f80f55570c59c4");
 const CONSTANTS = {
     /**
      * @define {boolean} Whether this is the client Node.js SDK.
@@ -3534,7 +3534,7 @@ function indicator(i) {
     else return service;
 }
 
-},{"65f8fbf5c308e03d":"d5jf4","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d5jf4":[function(require,module,exports) {
+},{"97f80f55570c59c4":"d5jf4","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"d5jf4":[function(require,module,exports) {
 // shim for using process in browser
 var process = module.exports = {};
 // cached from whatever global is present so that test runners that stub it
@@ -4172,7 +4172,7 @@ var _app = require("@firebase/app");
 var _component = require("@firebase/component");
 var _util = require("@firebase/util");
 var _logger = require("@firebase/logger");
-var process = require("a347cc4762905766");
+var process = require("cb77fa5e5e520393");
 const name = "@firebase/database";
 const version = "0.14.0";
 /**
@@ -15314,6 +15314,6 @@ RepoInfo;
  * @packageDocumentation
  */ registerDatabase();
 
-},{"a347cc4762905766":"d5jf4","@firebase/app":"3AcPV","@firebase/component":"bi1VB","@firebase/util":"ePiK6","@firebase/logger":"fZmft","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9Okvo","3Sj4L"], "3Sj4L", "parcelRequire8aba")
+},{"cb77fa5e5e520393":"d5jf4","@firebase/app":"3AcPV","@firebase/component":"bi1VB","@firebase/util":"ePiK6","@firebase/logger":"fZmft","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9Okvo","3Sj4L"], "3Sj4L", "parcelRequire8aba")
 
 //# sourceMappingURL=index.f5f90b3d.js.map

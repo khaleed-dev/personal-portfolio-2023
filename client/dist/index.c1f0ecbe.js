@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"76Jo9":[function(require,module,exports) {
+})({"hyryP":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "63f4402af12702aa";
+module.bundle.HMR_BUNDLE_ID = "33f402b9c1f0ecbe";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -531,49 +531,56 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"8OAGY":[function(require,module,exports) {
-//todo adding navbar funcationality
-// const navmenu = document.querySelector('.mobile-nav')
-const navlinks = document.querySelector(".mobile-nav-links");
-document.addEventListener("click", (e)=>{
-    if (e.target.matches(".bi-list")) navlinks.classList.remove("hide");
-    if (e.target.matches(".bi-x")) navlinks.classList.add("hide");
-    if (!e.target.matches(".mobile-nav-links") && !e.target.matches(".bi-list")) navlinks.classList.add("hide");
-});
-// todo back to top button
-const backTopBtn = document.querySelector(".back-to-top");
-window.onscroll;
-const showOnPx = 3300;
-const scrollContainer = ()=>{
-    return document.documentElement || document.body;
+},{}],"1UC89":[function(require,module,exports) {
+const cardTemplate = document.querySelector("#noteworthy-projects");
+const showMoreButton = document.querySelector(".cool-link");
+const cardsContainer = document.querySelector(".github-projects-grid");
+// const observer = new MutationObserver((entries) => {
+//     entries.forEach(entry => {
+//         const childElements = cardsContainer.querySelectorAll('.card');
+//         console.log("Child elements:", childElements)
+//     })
+// })
+// observer.observe(cardsContainer, { childList: true });
+const fetchData = async ()=>{
+    try {
+        const response = await fetch("/github");
+        const data = await response.json();
+        data.forEach((project)=>{
+            renderProjects(project);
+        });
+    } catch (error) {
+        console.log(error);
+        return;
+    }
 };
-const goToTop = ()=>{
-    document.body.scrollIntoView({
-        behavior: "smooth"
-    });
-};
-if (scrollContainer().scrollTop < showOnPx) backTopBtn.classList.add("hide");
-document.addEventListener("scroll", ()=>{
-    if (scrollContainer().scrollTop > showOnPx) backTopBtn.classList.remove("hide");
-    else backTopBtn.classList.add("hide");
-});
-backTopBtn.addEventListener("click", goToTop);
-// todo readmore
-const readMoreText = document.querySelector(".read-more");
-const readMoreBtn = document.querySelector(".read-more-btn");
-readMoreBtn.addEventListener("click", (e)=>{
-    const isHidden = readMoreText.classList.toggle("hideme");
-    readMoreBtn.textContent = `Read ${isHidden ? "more..." : "less"}`;
-}); /*
-    // - add navbar functionality 
-    // - back to top button
-    // - add resume/404/github repos pages.
-    // - make the pressing area bigger on featured project
-    // - organize your github, make noteworthy projects added dynamically with the github api.
-    // - make sure all the links working correct.
-    - readmore functionality
-*/ 
+fetchData();
+function renderProjects(project) {
+    const card = cardTemplate.content.cloneNode(true);
+    const name = card.querySelector(".card-header");
+    name.textContent = project.name;
+    const description = card.querySelector(".card-content");
+    description.textContent = project.description;
+    const langUsed = card.querySelector(".card-footer");
+    for(let language in project.languages){
+        const li = document.createElement("li");
+        li.textContent = language;
+        langUsed.append(li);
+    }
+    const liveLinkIcon = card.querySelector(".project-live-link");
+    const cardLinkWrapper = card.querySelector(".card-link");
+    if (project.homepage === "") {
+        liveLinkIcon.classList.add("hide");
+        cardLinkWrapper.href = project.html_url;
+    } else {
+        liveLinkIcon.href = project.homepage;
+        cardLinkWrapper.href = project.homepage;
+    }
+    const githubLink = card.querySelector(".project-github");
+    githubLink.href = project.html_url;
+    cardsContainer.append(card);
+}
 
-},{}]},["76Jo9","8OAGY"], "8OAGY", "parcelRequire8aba")
+},{}]},["hyryP","1UC89"], "1UC89", "parcelRequire8aba")
 
-//# sourceMappingURL=index.f12702aa.js.map
+//# sourceMappingURL=index.c1f0ecbe.js.map

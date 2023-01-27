@@ -1,14 +1,3 @@
-.dot {
-    height: 55px;
-    width: 55px;
-    background-color: #aaa;
-    border-radius: 50%;
-    position: absolute;
-    top: -5px;
-    left: -20px;
-    z-index: -1;
-    opacity: 0.5;
-}
 .btn-1{
     // background-color: hsl(164, 95%, 43%, 0.1);
     padding: 8px 16px;
@@ -18,6 +7,64 @@
     transition: background-color 200ms ease-in-out;
     color: $black; 
 }
+.dark {
+    .btn-2 {
+        color: #fff;
+        z-index: 10;
+        .circle {
+            background-color: hsl(0, 0%, 40%)
+        }
+    }
+
+}
+.btn-2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all .5s cubic-bezier(.77,0,.175,1);
+  
+    .circle {
+      position: absolute;
+      z-index: -1;
+      top: 5;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: hsl(0, 0%, 80%);
+      transition: all .5s cubic-bezier(.77,0,.175,1);
+    }
+  
+    i {
+      margin-left: 10px;
+      transition: all .5s cubic-bezier(.77,0,.175,1);
+    }
+  
+    &:hover {
+      .circle {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid hsl(0, 0%, 69%);;
+        border-radius: 10px;
+      }
+      i {
+        margin-left: 15px;
+      }
+    }
+}
+
+
 .btn-3{
     padding: 25px 80px;
     background-color: #ffffff;
@@ -29,6 +76,8 @@
 .btn-3:hover {
     background-color: hsl(0, 0%, 95%);
 }
+
+
 
 .back-to-top {
     position: fixed;
@@ -45,4 +94,11 @@
 }
 .back-to-top:hover {
     color: #06d69e;
+}
+
+.read-more-btn {
+  display: none;
+  color: #06d69e;
+  text-decoration: underline;
+  cursor: pointer;
 }

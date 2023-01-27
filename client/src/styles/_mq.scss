@@ -39,6 +39,9 @@
             top: -5;
         }
     }
+    .card {
+        min-height: auto;
+    }
 }
 @media only screen and (max-width: 930px){
     body {
@@ -168,6 +171,13 @@
             top: -10px;
             font-size: 24px;
         }
+        .read-more-btn {
+            display: initial;
+        }
+        .hideme {
+            display: none;
+        }
+
     }
     // services
     #services {
@@ -211,6 +221,9 @@
             align-items: center;
             width: 100%;
         }
+    }
+    .card {
+        min-height: auto;
     }
     // footer
     footer {

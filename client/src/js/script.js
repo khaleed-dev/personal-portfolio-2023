@@ -27,7 +27,9 @@ const goToTop = () => {
         behavior: "smooth",
       })
 }
-
+if (scrollContainer().scrollTop < showOnPx) {
+    backTopBtn.classList.add("hide")
+}
 document.addEventListener("scroll", () => {
     if (scrollContainer().scrollTop > showOnPx) {
         backTopBtn.classList.remove("hide")
@@ -37,11 +39,24 @@ document.addEventListener("scroll", () => {
 })
 backTopBtn.addEventListener('click', goToTop)
 
+// todo readmore
+
+const readMoreText = document.querySelector('.read-more')
+const readMoreBtn = document.querySelector('.read-more-btn')
+
+readMoreBtn.addEventListener('click',  e => {
+    const isHidden = readMoreText.classList.toggle("hideme");
+    readMoreBtn.textContent = `Read ${isHidden ? "more..." : "less"}`;
+});
+
+
+
 /*
     // - add navbar functionality 
     // - back to top button
-    - add thank you/resume/404 pages.
-    - make the pressing area bigger on featured project
-    - organize your github, make noteworthy projects added dynamically with the github api.
-    - make sure all the links working correct.
+    // - add resume/404/github repos pages.
+    // - make the pressing area bigger on featured project
+    // - organize your github, make noteworthy projects added dynamically with the github api.
+    // - make sure all the links working correct.
+    - readmore functionality
 */

@@ -24,6 +24,9 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -34,9 +37,14 @@ li {
 p {
     font-weight: 400;
 }
+// font
+@font-face {
+    font-family: 'SuisseWorks';
+    src: url('/server/fonts/SuisseWorks-Regular.ttf') format('truetype');
+}
+
 
 // website styling
-
 //? buttons
 @import "./components/buttons"; 
 
@@ -63,7 +71,7 @@ main {
     padding: 0px 15px;
     height: 90vh;
     .grid-index {
-        margin-bottom: 157px;
+        margin-bottom: 186px;
     }
 }
 .grid-165{
@@ -105,6 +113,9 @@ main {
         font-weight: 900;
     }
 }
+.grid-cta {
+    display: flex;
+}
 .underlined {
     font-size: 2rem;
     font-weight: 600;
@@ -122,3 +133,4 @@ main {
 }
 //? // media queries
 @import "./mq";
+
