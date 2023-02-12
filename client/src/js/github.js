@@ -13,7 +13,7 @@ const cardsContainer = document.querySelector('.github-projects-grid')
 
 const fetchData = async () => {
     try {
-        const response = await fetch("/github");
+        const response = await fetch("/api/github");
         const data = await response.json();
         data.forEach(project => {
             renderProjects(project)

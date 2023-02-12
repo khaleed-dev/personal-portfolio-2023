@@ -797,6 +797,11 @@ form .btn-3 {
   display: flex;
 }
 
+.section-header {
+  justify-content: center;
+  display: flex;
+}
+
 main {
   height: 90vh;
   padding: 0 15px;

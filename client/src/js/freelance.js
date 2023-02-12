@@ -1,0 +1,1 @@
+const freelancePageUrl = "../freelance.html";
