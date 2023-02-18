@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Khaled Saied's 2023 personal portfolio",
   "scripts": {
-    "start:client": "parcel serve client/src/index.html --public-url / --dist-dir client/dist",
-    "build:client": "parcel build client/src/index.html --public-url / --dist-dir client/dist",
+    "start:client": "parcel serve client/src/index.html client/src/freelance.html --no-cache --public-url / --dist-dir client/dist ",
+    "build:client": "parcel build client/src/index.html client/src/freelance.html --public-url / --dist-dir client/dist",
     "start:server": "node server/index.js",
     "dev:server": "nodemon server/index.js"
   },
@@ -22,9 +22,11 @@
   "keywords": [],
   "dependencies": {
     "axios": "^1.2.3",
+    "dotenv": "^16.0.3",
     "email-validator": "^2.0.4",
     "express": "^4.18.2",
     "firebase": "^9.15.0",
+    "node-cache": "^5.1.2",
     "TagCloud": "^2.3.2"
   }
 }

@@ -1,0 +1,247 @@
+html 👇
+
+<div class="posts-grid">
+
+    <div class="post-item">
+
+        <div class="post-inner">
+
+            <a href="#" class="post-img-link">
+                <div class="post-img-wrapper">
+                    <div class="post-img">
+                        <img src="./images/long-img.png" alt="test">
+                    </div>
+                </div>
+            </a>
+            
+            <div class="post-content">
+                <a href="#"></a>
+                <h4>
+                    <a href="#">My Project!</a>
+                </h4>
+            </div>
+
+            <div class="post-footer">
+                <div class="tags">
+                    <span>html</span>
+                    <span>css</span>
+                    <span>js</span>
+                </div>
+                <div class="post-links">
+                    <a href=""><i></i></a>
+                    <a href=""><i></i></a>
+                    <a href=""><i></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="post-item">
+        <div class="post-inner">
+            <a href="#" class="post-img-link">
+                <div class="post-img-wrapper">
+                    <div class="post-img">
+                        <img src="./images/long-img.png" alt="test">
+                    </div>
+                </div>
+            </a>
+            
+            <div class="post-content">
+                <a href="#"></a>
+                <h4>
+                    <a href="#">My Project!</a>
+                </h4>
+            </div>
+            <div class="post-footer">
+                <div class="tags">
+                    <span>html</span>
+                    <span>css</span>
+                    <span>js</span>
+                </div>
+                <div class="post-links">
+                    <a href=""><i></i></a>
+                    <a href=""><i></i></a>
+                    <a href=""><i></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+css 👇
+
+.posts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    .post-img-wrapper {
+        width: 500px;
+        height: 300px;
+        overflow: auto;
+        position: relative;
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: auto;
+        }
+    }
+}
+
+
+        <div class="containerr">
+            <div class="image-container">
+              <img class="image" src="https://dummyimage.com/600x1200/000/fff" />
+            </div>
+            <div class="image-container">
+              <img class="image" src="https://dummyimage.com/600x400/000/fff" />
+            </div>
+            <div class="image-container">
+              <img class="image" src="https://dummyimage.com/600x400/000/fff" />
+            </div>
+            <div class="image-container">
+              <img class="image" src="https://dummyimage.com/600x400/000/fff" />
+            </div>
+            <div class="image-container">
+              <img class="image" src="https://dummyimage.com/600x1200/000/fff" />
+            </div>
+            <div class="image-container">
+              <img class="image" src="https://dummyimage.com/600x400/000/fff" />
+            </div>
+        </div>
+
+
+
+.containerr {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+  
+.image-container {
+    width: 33.33%;
+    height: 300px;
+    overflow-y: scroll;
+    position: relative;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+  
+.image {
+    width: 100%;
+    height: 100% 100%;
+    object-fit: cover;
+  
+}
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="posts-grid">
+            <div class="post-item">
+                <div class="post-inner">
+                    <div class="post-img scrollable">
+                        <img src="./images/long-img.png" alt="test">
+                    </div>
+                    <div class="post-content">
+                        <a href="#"></a>
+                        <h4>
+                            <a href="#">My Project!</a>
+                        </h4>
+                    </div>
+                    <div class="post-footer">
+                        <div class="tags">
+                            <span>html</span>
+                            <span>css</span>
+                            <span>js</span>
+                        </div>
+                        <div class="post-links">
+                            <a href=""><i></i></a>
+                            <a href=""><i></i></a>
+                            <a href=""><i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-item">
+                <div class="post-inner">
+                    <div class="post-img">
+                        <img src="https://dummyimage.com/600x400/000/fff" alt="test">
+                    </div>
+                    <div class="post-content">
+                        <a href="#"></a>
+                        <h4>
+                            <a href="#">My Project!</a>
+                        </h4>
+                    </div>
+                    <div class="post-footer">
+                        <div class="tags">
+                            <span>html</span>
+                            <span>css</span>
+                            <span>js</span>
+                        </div>
+                        <div class="post-links">
+                            <a href=""><i></i></a>
+                            <a href=""><i></i></a>
+                            <a href=""><i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-item">
+                <div class="post-inner">
+                    <div class="post-img">
+                        <img src="./images/long-img.png" alt="test">
+                    </div>
+                    <div class="post-content">
+                        <a href="#"></a>
+                        <h4>
+                            <a href="#">My Project!</a>
+                        </h4>
+                    </div>
+                    <div class="post-footer">
+                        <div class="tags">
+                            <span>html</span>
+                            <span>css</span>
+                            <span>js</span>
+                        </div>
+                        <div class="post-links">
+                            <a href=""><i></i></a>
+                            <a href=""><i></i></a>
+                            <a href=""><i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+<div class="post-item">
+    <img src="./images/minesweeper-tilt.png" alt="test">
+</div>
+<div class="post-item">
+    <img src="https://dummyimage.com/600x400/000/fff" alt="test">
+</div>
+<div class="post-item scrollable">
+    <img src="./images/long-img.png" alt="test">
+</div>
+<div class="post-item scrollable">
+    <img src="https://dummyimage.com/600x1400/000/fff" alt="test">
+</div>

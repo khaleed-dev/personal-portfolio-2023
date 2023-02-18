@@ -11,6 +11,7 @@ const cardsContainer = document.querySelector('.github-projects-grid')
 
 // observer.observe(cardsContainer, { childList: true });
 
+
 const fetchData = async () => {
     try {
         const response = await fetch("/api/github");

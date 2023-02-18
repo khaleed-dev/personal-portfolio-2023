@@ -20,8 +20,7 @@ app.use(express.static(path.join(__dirname, "../client/dist")))
 // routes
 app.use("/freelance", freelanceRoute)
 app.use("/resume", resumeRoute)
-app.use('/api', apiRoute)
-
+app.use('/api', apiRoute) // has github, images, and projects
 
 // Create a route for handling 404 errors
 app.use((req, res, next) => {

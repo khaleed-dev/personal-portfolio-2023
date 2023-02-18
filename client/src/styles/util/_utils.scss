@@ -30,6 +30,9 @@
 .flex-center {
     @include d-flex(initial, center, center);
 }
+.d-flex {
+    display: flex;
+}
 .align-end {
     align-items: flex-end;
 }
@@ -79,3 +82,4 @@
 .blur {
     backdrop-filter: blur(5px);
 }
+
