@@ -2,7 +2,6 @@
 const express = require('express');
 const path = require('path')
 
-
 // routes variables
 const freelanceRoute = require('./routes/Freelance')
 const resumeRoute = require('./routes/Resume')
@@ -29,3 +28,4 @@ app.use((req, res, next) => {
 
 //listen on a port
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
+
