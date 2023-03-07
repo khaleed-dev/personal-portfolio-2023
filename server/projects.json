@@ -1,9 +1,9 @@
 [
     {
         "title": "our-tailor",
-        "imgName": "our-tailor-fullpage.png",
+        "imgName": "our-tailor.png",
         "class": "scrollable",
-        "tags": ["wordpress"],
+        "tags": ["wordpress", "real-project"],
         "links": [
             {
                 "name": "Live Demo",
@@ -40,9 +40,9 @@
     },
     {
         "title": "myCommerce",
-        "imgName": "myCommerce.png",
+        "imgName": "my-commerce.png",
         "class": "scrollable",
-        "tags": ["wordpress"],
+        "tags": ["wordpress", "training-project"],
         "links": [
             {
                 "name": "Live Demo",
