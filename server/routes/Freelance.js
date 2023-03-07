@@ -19,7 +19,10 @@ router.get('/', (req, res) => {
         });
       }
     });
-    
+})
+
+router.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, "../../client/dist/freelance.html"));
 })
 
 module.exports = router;

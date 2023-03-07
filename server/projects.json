@@ -1,9 +1,25 @@
 [
     {
-        "title": "Sample Project 1",
-        "imgName": "sample-long-1.png",
+        "title": "our-tailor",
+        "imgName": "our-tailor-fullpage.png",
         "class": "scrollable",
-        "tags": ["HTML", "CSS", "JavaScript"],
+        "tags": ["wordpress"],
+        "links": [
+            {
+                "name": "Live Demo",
+                "url": "https://our-tailor.com",
+                "icon": "bi-arrow-up-right-circle"
+            }
+        ]
+    },
+    {
+        "title": "Minimal Designer Portfolio",
+        "imgName": "minimal-designer-portfolio.png",
+        "class": "scrollable",
+        "category": ["portfolio"],
+        "tech-used": ["Figma"],
+        "tags": ["minimal", "clean", "design"],
+        "type": ["website"],
         "links": [
             {
                 "name": "GitHub",
@@ -12,7 +28,7 @@
             },
             {
                 "name": "Live Demo",
-                "url": "https://khaleed-dev.github.io/sample-project-1/",
+                "url": "/freelance",
                 "icon": "bi-arrow-up-right-circle"
             },
             {
@@ -23,25 +39,15 @@
         ]
     },
     {
-        "title": "Sample Project 2",
-        "imgName": "sample-2.png",
-        "class": "d-flex",
-        "tags": ["HTML", "CSS", "JavaScript"],
+        "title": "myCommerce",
+        "imgName": "myCommerce.png",
+        "class": "scrollable",
+        "tags": ["wordpress"],
         "links": [
             {
-                "name": "GitHub",
-                "url": "https://github.com/khaleed-dev",
-                "icon": "bi-github"
-            },
-            {
                 "name": "Live Demo",
-                "url": "https://khaleed-dev.github.io/sample-project-2/",
+                "url": "http://mycommerce.epizy.com/",
                 "icon": "bi-arrow-up-right-circle"
-            },
-            {
-                "name": "Behance",
-                "url": "https://www.behance.net/gallery/116000565/Portfolio-Website",
-                "icon": "bi-behance"
             }
         ]
     }

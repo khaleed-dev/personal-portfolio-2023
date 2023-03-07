@@ -806,20 +806,29 @@ form .btn-3 {
   display: flex;
 }
 
-.filters-wrapper {
+.filters-parent {
+  z-index: 99999;
   display: flex;
+  position: relative;
 }
 
-.filters-wrapper .bi-filter {
+.filters-parent .filters-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+}
+
+.filters-parent .filters-wrapper .bi-filter {
   margin-right: 2rem;
   font-size: 2rem;
 }
 
-.filters-wrapper > :first-child {
+.filters-parent .filters-wrapper > :first-child {
   margin-right: .5rem;
 }
 
-.filters-wrapper .filter-btn {
+.filters-parent .filters-wrapper .filter-btn {
   -webkit-user-select: none;
   user-select: none;
   height: -moz-fit-content;
@@ -830,36 +839,38 @@ form .btn-3 {
   border: 2px solid #ddd;
   border-radius: 5px;
   margin-right: 1.5rem;
+  position: relative;
 }
 
-.filters-wrapper .filter-btn:hover {
+.filters-parent .filters-wrapper .filter-btn:hover {
   border-color: #06d6a0;
 }
 
-.filters-wrapper b {
+.filters-parent .filters-wrapper b {
   justify-content: space-between;
   padding: .5rem 1rem;
   display: flex;
 }
 
-.filters-wrapper b i {
+.filters-parent .filters-wrapper b i {
   cursor: pointer;
   margin-left: .5rem;
   font-weight: 900;
 }
 
-.filters-wrapper .filter-options {
+.filters-parent .filters-wrapper .filter-options {
   margin: .6rem 0 0;
   padding: 0 1rem 1rem;
+  overflow: visible;
 }
 
-.filters-wrapper .filter-options li {
+.filters-parent .filters-wrapper .filter-options li {
   justify-content: space-between;
   margin-bottom: .3rem;
   display: flex;
 }
 
-.filters-wrapper .filter-options li * {
+.filters-parent .filters-wrapper .filter-options li * {
   cursor: pointer;
 }
 

@@ -9,11 +9,11 @@ filterBtns.forEach(filterBtn => {
         }
     });
 });
+
 const fetchData = async () => {
     try {
         const response = await fetch("/api/projects");
         const data = await response.json();
-        console.log(data)
         data.forEach(project => {
             renderItems(project)
         })
@@ -25,6 +25,7 @@ const fetchData = async () => {
 fetchData()
 
 function renderItems(project){
+    console.log(project)
     const item = itemTemplate.content.cloneNode(true)
 
     const imgWrapper = item.querySelector('.post-img-wrapper')
@@ -41,13 +42,19 @@ function renderItems(project){
     project.links.forEach((link) => {
         let aTag = document.createElement('a') //  name, url
         let iTag = document.createElement('i') //  icon
-        
+
         aTag.href = link.url
         aTag.title = link.name
+        aTag.target = '_blank' 
         iTag.classList.add('bi', link.icon)
         aTag.append(iTag)
 
         postLinks.append(aTag)
+
+        if(link.name === "Live Demo"){
+            console.log('found', link)
+            title.href = link.url
+        }
     })
 
     const tags = item.querySelector('.post-tags')
@@ -59,3 +66,4 @@ function renderItems(project){
 
     postsGrid.append(item)
 }
+
