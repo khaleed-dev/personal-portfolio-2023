@@ -1,0 +1,13 @@
+// vercel.json
+{
+  "projects": {
+    "client": {
+      "buildCommand": "npm run build:client",
+      "outputDirectory": "client/dist"
+    },
+    "server": {
+      "buildCommand": "npm run build:server",
+      "outputDirectory": "server"
+    }
+  }
+}
